@@ -1,0 +1,21 @@
+#pragma once
+
+namespace c2ba
+{
+namespace @LIBRARY_NAME@
+{
+    static constexpr int VERSION_MAJOR = @VERSION_MAJOR@;
+    static constexpr int VERSION_MINOR = @VERSION_MINOR@;
+    static constexpr int VERSION_PATCH = @VERSION_PATCH@;
+    
+    inline constexpr char* library_name()
+    {
+        return "@LIBRARY_NAME@";
+    }
+    
+    inline constexpr char* version_string()
+    {
+        return "@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@";
+    }
+}
+}
